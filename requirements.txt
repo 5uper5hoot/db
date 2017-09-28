@@ -1,0 +1,2 @@
+backoff==1.4.3 --hash=sha256:bc8ef5a3b0cc7e90d56dd4d9d385557ada1a6dbdfcdd2b44038beeabae119038
+mysql-connector-python-rf==2.2.2 --hash=sha256:f8a19ef79d2e28ad28c740e3b757d60ff6077e1a08c357eb31dfa6839aaaf294

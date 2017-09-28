@@ -1,0 +1,44 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "1343828aae26c4507adc2e5bfd277717b878a641b544c7b4e5955ad391f13634"
+        },
+        "host-environment-markers": {
+            "implementation_name": "cpython",
+            "implementation_version": "3.6.1",
+            "os_name": "posix",
+            "platform_machine": "x86_64",
+            "platform_python_implementation": "CPython",
+            "platform_release": "4.10.0-33-generic",
+            "platform_system": "Linux",
+            "platform_version": "#37-Ubuntu SMP Fri Aug 11 10:55:28 UTC 2017",
+            "python_full_version": "3.6.1",
+            "python_version": "3.6",
+            "sys_platform": "linux"
+        },
+        "pipfile-spec": 6,
+        "requires": {},
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.python.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "backoff": {
+            "hashes": [
+                "sha256:bc8ef5a3b0cc7e90d56dd4d9d385557ada1a6dbdfcdd2b44038beeabae119038"
+            ],
+            "version": "==1.4.3"
+        },
+        "mysql-connector-python-rf": {
+            "hashes": [
+                "sha256:f8a19ef79d2e28ad28c740e3b757d60ff6077e1a08c357eb31dfa6839aaaf294"
+            ],
+            "version": "==2.2.2"
+        }
+    },
+    "develop": {}
+}
