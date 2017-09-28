@@ -10,6 +10,6 @@ setup(name='db',
       packages=['db'],
       zip_safe=False,
       install_requires=[
-          backoff>=1.4.3,
-          mysql-connector-python-rf>=2.2.2
+          "backoff>=1.4.3",
+          "mysql-connector-python-rf>=2.2.2"
       ])
