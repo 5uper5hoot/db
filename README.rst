@@ -1,1 +1,10 @@
-this will be the readme file for the db package
+==
+db
+==
+
+Install
+~~~~~~~
+If you aren't using Pipenv, piss off.::
+
+pipenv install git+ssh://git@github.com/5uper5hoot/db.git#egg=db
+
