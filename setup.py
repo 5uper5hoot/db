@@ -8,4 +8,8 @@ setup(name='db',
       author_email='peter@topsport.com.au',
       license=None,
       packages=['db'],
-      zip_safe=False)
+      zip_safe=False,
+      install_requires=[
+          backoff>=1.4.3,
+          mysql-connector-python-rf>=2.2.2
+      ])
