@@ -120,7 +120,6 @@ class DataBase:
         else:
             LOGGER.debug("Connection closed")
 
-    @property
     def commit(self):
         self.CONN.commit()
             
