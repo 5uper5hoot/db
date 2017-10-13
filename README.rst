@@ -26,7 +26,10 @@ to establish the connection. Example .cnf file::
 There can be multiple sections in the .cnf file enabling DataBase
 objects being created for multiple databases within a single application.
 
-Example Usage::
+Basic Usage
+~~~~~~~~~~~
+
+No dict_cursor::
 
     >>> import db
     >>> with db.DataBase("db_top_feed") as dbse:
@@ -35,8 +38,8 @@ Example Usage::
     ...
     (1, 92, 'Match Price Model Example Match', 2, datetime.datetime(2022, 7, 14, 14, 27), datetime.datetime(2022, 7, 14, 14, 27), 0)
 
-
 With dict_cursor::
+
     >>> import json
     >>> with db.DataBase("db_top_feed") as dbse:
     ...     cur = dbse.execute("SELECT event_id, description  FROM tbl_top_events LIMIT 3", dict_cursor=True)
