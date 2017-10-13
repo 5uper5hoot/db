@@ -60,7 +60,7 @@ With dict_cursor:
     ]
 
 
-:copyright: (c) 2017 TopSport
+:copyright: (c) 2017 Peter Schutt
 """
 
 from .db import DataBase
