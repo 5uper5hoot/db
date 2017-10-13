@@ -1,6 +1,6 @@
-==
-db
-==
+======
+top-db
+======
 
 Connection and query boilerplate built around mysql.connector.
 
