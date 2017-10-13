@@ -121,7 +121,8 @@ class DataBase:
             LOGGER.debug("Connection closed")
 
     def commit(self):
-        self.CONN.commit()
+        if self.CONN is not None:
+            self.CONN.commit()
             
     @backoff.on_exception(backoff.expo,
                           (mysql.connector.errors.InterfaceError,
