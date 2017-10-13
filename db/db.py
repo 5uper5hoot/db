@@ -7,8 +7,10 @@ import mysql.connector
 
 LOGGER = logging.getLogger(__name__)
 
+
 class ConnectError(Exception):
     pass
+
 
 class DataBase:
 
