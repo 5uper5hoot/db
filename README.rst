@@ -7,7 +7,7 @@ Connection and query boilerplate built around mysql.connector.
 If no exceptions are raised inside context manager, connection is
 automatically committed upon exiting the context manager. However,
 if the connection is to be held open for extended periods, the user can
-also commit their own transactions using the DataBase.commit property.
+also commit their own transactions using DataBase.commit().
 
 Connection parameters are fetched from a configuration file and used
 to establish the connection. Example .cnf file::
@@ -65,5 +65,5 @@ Install
 ~~~~~~~
 If you aren't using Pipenv, you're having a laugh::
 
-    pipenv install git+ssh://git@github.com/5uper5hoot/db.git#egg=db
+    pipenv install git+https://github.com/5uper5hoot/db.git#egg=db
 
