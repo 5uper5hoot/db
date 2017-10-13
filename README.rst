@@ -31,8 +31,8 @@ Basic Usage
 
 No dict_cursor::
 
-    >>> import db
-    >>> with db.DataBase("db_top_feed") as dbse:
+    >>> import top_db
+    >>> with top_db.DataBase("db_top_feed") as dbse:
     ...     cur = dbse.execute("SELECT * FROM tbl_top_events LIMIT 1")
     ...     print(cur.fetchone())
     ...
@@ -41,7 +41,7 @@ No dict_cursor::
 With dict_cursor::
 
     >>> import json
-    >>> with db.DataBase("db_top_feed") as dbse:
+    >>> with top_db.DataBase("db_top_feed") as dbse:
     ...     cur = dbse.execute("SELECT event_id, description  FROM tbl_top_events LIMIT 3", dict_cursor=True)
     ...     print(json.dumps(cur.fetchall(), sort_keys=True, indent=4))
     ...
@@ -65,5 +65,5 @@ Install
 ~~~~~~~
 If you aren't using Pipenv, you're having a laugh::
 
-    pipenv install git+https://github.com/5uper5hoot/db.git#egg=db
+    pipenv install top_db
 
