@@ -1,13 +1,20 @@
-from setuptools import setup
+import os
+from setuptools import find_packages, setup
+
+here = os.path.abspath(os.path.dirname(__file__))
+
+about = {}
+with open(os.path.join(here, "db", "__VERSION__.py")) as f:
+    exec(f.read(), about)
 
 setup(name='db',
-      version='0.1.2',
-      description='MySQL.connector connection manager and statement executor',
+      version=about["__version__"],
+      description='MySQL.connector boilerplate',
       url='https://github.com/5uper5hoot/db.git',
       author='Peter Schutt',
       author_email='peter@topsport.com.au',
-      license=None,
-      packages=['db'],
+      license='MIT',
+      packages=find_packages(exclude=['tests']),
       zip_safe=False,
       install_requires=[
           "backoff>=1.4.3",
