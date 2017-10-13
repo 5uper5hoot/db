@@ -120,6 +120,10 @@ class DataBase:
         else:
             LOGGER.debug("Connection closed")
 
+    @property
+    def commit(self):
+        self.CONN.commit()
+            
     @backoff.on_exception(backoff.expo,
                           (mysql.connector.errors.InterfaceError,
                            mysql.connector.errors.OperationalError),
