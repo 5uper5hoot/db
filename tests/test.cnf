@@ -1,0 +1,10 @@
+
+[test_db]
+user = user-name
+password = password1
+database = my-database
+host = 0.0.0.0
+charset = utf8
+ssl_ca = /dir/to/ca.pem
+ssl_cert = /dir/to/client-cert.pem
+ssl_key = /dir/to/client-key.pem
