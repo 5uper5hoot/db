@@ -4,12 +4,12 @@ db
 
 Connection and query boilerplate built around mysql.connector.
 
-If no exceptions are raised inside context manager, connection is 
-automatically committed upon exiting the context manager. However, 
-if the connection is to be held open for extended periods, the user can 
+If no exceptions are raised inside context manager, connection is
+automatically committed upon exiting the context manager. However,
+if the connection is to be held open for extended periods, the user can
 also commit their own transactions using the DataBase.commit property.
 
-Connection parameters are fetched from a configuration file and used 
+Connection parameters are fetched from a configuration file and used
 to establish the connection. Example .cnf file::
 
     [test_db]
@@ -22,8 +22,8 @@ to establish the connection. Example .cnf file::
     ssl_cert = /dir/to/client-cert.pem
     ssl_key = /dir/to/client-key.pem
     ...
-    
-There can be multiple sections in the .cnf file enabling DataBase 
+
+There can be multiple sections in the .cnf file enabling DataBase
 objects being created for multiple databases within a single application.
 
 Example Usage::
@@ -34,6 +34,7 @@ Example Usage::
     ...     print(cur.fetchone())
     ...
     (1, 92, 'Match Price Model Example Match', 2, datetime.datetime(2022, 7, 14, 14, 27), datetime.datetime(2022, 7, 14, 14, 27), 0)
+
 
 With dict_cursor::
     >>> import json
@@ -55,6 +56,7 @@ With dict_cursor::
             "event_id": 3
         }
     ]
+
 
 Install
 ~~~~~~~
