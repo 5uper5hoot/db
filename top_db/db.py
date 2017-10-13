@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
 """
-db.db
+top-db.db
 ~~~~~
 
-Implement database class which can be used as context manager to 
+Implement database class which can be used as context manager to
 manage MySQL database connections and retrying failed queries/
 connection attempts.
 
@@ -123,7 +123,7 @@ class DataBase:
     def commit(self):
         if self.CONN is not None:
             self.CONN.commit()
-            
+
     @backoff.on_exception(backoff.expo,
                           (mysql.connector.errors.InterfaceError,
                            mysql.connector.errors.OperationalError),

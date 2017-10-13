@@ -14,7 +14,7 @@ from unittest.mock import MagicMock, patch
 
 import mysql.connector
 
-from db import db
+from top_db import db
 
 CWD = os.getcwd()
 CNF_PATH = CWD + "/test.cnf"
