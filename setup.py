@@ -9,7 +9,7 @@ with open(os.path.join(here, "top_db", "__VERSION__.py")) as f:
     exec(f.read(), about)
     
 # Get the long description from the README file
-with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
+with open(os.path.join(here, 'README.rst'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(name='top_db',
